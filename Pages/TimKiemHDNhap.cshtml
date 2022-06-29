@@ -1,0 +1,13 @@
+﻿@page
+@model OOP_FINAL.Pages.TimKiemHDNhapModel
+<form method="post">
+    <label for="fname">Mã đơn nhập muốn tìm</label><br />
+    <input type="text" name="madon" value="0"><br />
+    <input type="submit" value="Tìm" />
+</form>
+@Model.Chuoi
+Mã hóa đơn: @Model.a.maHD
+Mã hàng: @Model.a.maHang
+Đơn giá: @Model.a.dongia vnd
+Đại lý: @Model.a.nguoi
+Ngày giao: @Model.a.date

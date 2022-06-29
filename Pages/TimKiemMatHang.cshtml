@@ -1,0 +1,15 @@
+﻿@page
+@model OOP_FINAL.Pages.TimKiemMatHangModel
+<form method="post">
+    <label for="fname">Mã mặt hàng muốn tìm</label><br />
+    <input type="text" name="mahang" value="0"><br />
+    <input type="submit" value="Tìm" />
+</form>
+@Model.Chuoi
+Mã mặt hàng: @Model.a.maHang
+Tên mặt hàng: @Model.a.tenHang
+Còn hạn sử dụng/ 1 là còn, 0 là ko còn: @Model.a.hanDung
+Công ty sản xuất: @Model.a.ctySX
+Năm sản xuất: @Model.a.namSX
+Mã loại hàng: @Model.a.loai
+
